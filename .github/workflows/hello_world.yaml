@@ -11,7 +11,7 @@ on:
 
 jobs:
   hello:
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: hello World
@@ -21,6 +21,6 @@ jobs:
   goodbye:
     runs-on: ubuntu-latest
     steps:
-      name: goodbye World
-      run: echo "Goodby World"
-      shell: bash
+      - name: goodbye World
+        run: echo "Goodby World"
+        shell: bash
